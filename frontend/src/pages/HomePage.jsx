@@ -18,7 +18,7 @@ import "./homepage.css";
 const HomePage = () => {
 
   useEffect(()=>{
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send({ hitType: "pageview", page: "/" });
   },[])
 
   const { t } = useTranslation();
